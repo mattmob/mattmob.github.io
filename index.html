@@ -36,12 +36,22 @@
             font-size: 1.2em;
             margin-top: 20px;
         }
+        .instructions, .examples {
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h2>Payroll Conversion Calculator</h2>
+
+    <!-- Instructions Section -->
+    <div class="instructions">
+        <h3>How to Use the Payroll Conversion Calculator</h3>
+        <p>Enter your start and end times in the HH:mm AM/PM format. The calculator will convert the time worked into payroll units, useful for payroll processing. Each unit represents a portion of an hour worked, typically calculated in quarter-hour increments.</p>
+    </div>
+
     <label for="start-time">Start Time (HH:mm AM/PM):</label>
     <input type="text" id="start-time" placeholder="08:00 AM">
 
@@ -52,6 +62,13 @@
 
     <div class="result">
         <strong>Units:</strong> <span id="result"></span>
+    </div>
+
+    <!-- Examples Section -->
+    <div class="examples">
+        <h3>Examples</h3>
+        <p><strong>Example 1:</strong> Start Time: 08:00 AM, End Time: 05:00 PM, <strong>Units:</strong> 36</p>
+        <p><strong>Example 2:</strong> Start Time: 09:15 AM, End Time: 12:45 PM, <strong>Units:</strong> 14</p>
     </div>
 </div>
 
@@ -112,3 +129,4 @@
 
 </body>
 </html>
+hghbn 
